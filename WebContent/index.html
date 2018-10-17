@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	h2 {
+		color: #0099CC;
+	}
+	.flex-container {
+		margin-left: 35%;
+	}
+	input {
+		outline: none;
+	}
+	.button {
+		background: transparent;
+		border: 2px solid #0099CC;
+		border-radius: 6px;
+	}
+	.button:hover {
+		background-color: #008CBA;
+		color: white;
+	}
+	.a1 {
+		width: 165px;
+	}
+	.a3 {
+		width: 202px;
+	}
+	.a4 {
+		width: 178px;
+	}
+	.a5 {
+		width: 178px;
+	}
+	.c {
+		margin-left: 50px;
+		width: 100px;
+	}
+</style>
+</head>
+<body>
+	<div class="flex-container">
+		<form name="data" method="post" action="ServletProgram">
+			<h2>Product Information</h2>
+			Product ID: <input class="a1" name="productID"/><br/>
+			Product Name: <input class="a2" name="productName"/><br/>
+			Price: <input class="a3" name="price"/><br/>
+			Quantity: <input class="a4" name="quantity"/><br/>
+			Category: <input class="a5" name="category"/><br/><br/>
+			<input class="button" type="submit" value="Add Product" name="addButton" />
+			<input class="button" type="submit" value="View Product" name="viewButton" />
+			<input class="button" type="submit" value="Edit" name="editButton"/>
+			<input class="button" type="reset" value="Clear" name="clearButton"/>
+		</form>
+	</div>
+</body>
+</html>
